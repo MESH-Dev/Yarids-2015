@@ -18,6 +18,8 @@ Starter is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 /* line 8, sass/base/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -288,7 +290,7 @@ th {
 body {
   color: #404040;
   font-size: 16;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -390,96 +392,31 @@ footer p {
 }
 
 /* line 1, sass/layout/_menus.scss */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%;
-}
-/* line 7, sass/layout/_menus.scss */
-.main-navigation ul {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-/* line 13, sass/layout/_menus.scss */
-.main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
-  top: 1.5em;
-  left: -999em;
-  z-index: 99999;
-}
-/* line 21, sass/layout/_menus.scss */
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-/* line 27, sass/layout/_menus.scss */
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-  left: 100%;
-}
-/* line 33, sass/layout/_menus.scss */
-.main-navigation ul ul a {
-  width: 200px;
-}
-/* line 46, sass/layout/_menus.scss */
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-  left: auto;
-}
-/* line 51, sass/layout/_menus.scss */
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-/* line 59, sass/layout/_menus.scss */
-.main-navigation a {
-  display: block;
-  text-decoration: none;
+.sidebar {
+  padding: 25px;
+  border: 4px solid black;
 }
 
-/* Small menu. */
-/* line 71, sass/layout/_menus.scss */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block;
+/* line 8, sass/layout/_menus.scss */
+.navigation ul li {
+  margin-bottom: 20px;
+}
+/* line 10, sass/layout/_menus.scss */
+.navigation ul li a {
+  color: black;
+  text-transform: uppercase;
 }
 
-@media screen and (min-width: 37.5em) {
-  /* line 77, sass/layout/_menus.scss */
-  .menu-toggle {
-    display: none;
-  }
+/* line 18, sass/layout/_menus.scss */
+.social a {
+  color: black;
+}
 
-  /* line 80, sass/layout/_menus.scss */
-  .main-navigation ul {
-    display: block;
-  }
-}
-/* line 89, sass/layout/_menus.scss */
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden;
-}
-/* line 94, sass/layout/_menus.scss */
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%;
-}
-/* line 99, sass/layout/_menus.scss */
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%;
+/* line 22, sass/layout/_menus.scss */
+.twitter {
+  padding: 25px;
+  border: 4px solid black;
+  font-size: 0.75em;
 }
 
 /* line 32, sass/utilities/_mixins.scss */
@@ -515,6 +452,14 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/* line 1, sass/layout/_header.scss */
+.logo {
+  margin: 1.875em 0 0;
+  padding: 15px;
+  border: 4px solid black;
+  text-align: center;
 }
 
 /* line 6, sass/modules/_modules.scss */
