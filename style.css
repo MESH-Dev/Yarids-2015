@@ -828,6 +828,12 @@ footer p {
   font-size: 1em;
 }
 
+/* line 28, sass/layout/_menus.scss */
+.cards {
+  font-size: 0.8125em;
+  text-align: center;
+}
+
 /* line 32, sass/utilities/_mixins.scss */
 html, body {
   height: 100%;

@@ -10,6 +10,13 @@
 
       <div class="main-content">
 
+        <div class="slides">
+          <div><img src="images/rectangle.png" /></div>
+          <div><img src="images/rectangle-1.png" /></div>
+        </div>
+
+        <br/>
+
         <div class="third">
           <h3>Yarid's at the Greenbrier Hotel</h3>
           <p>
@@ -49,7 +56,7 @@
             Lewisburg, West Virginia 24901<br/>
             304.647.5000
           </p>
-          
+
           <p>
             <span class="featuring">email us today to request any special merchandise</span><br/>
             <a href="mailto:info.yarids@gmail.com">info.yarids@gmail.com</a>

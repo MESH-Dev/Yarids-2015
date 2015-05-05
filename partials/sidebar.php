@@ -37,4 +37,15 @@ $TweetPHP = new TweetPHP(array(
         <?php echo $TweetPHP->get_tweet_list(); ?>
     </div>
   </div>
+  <div class="row">
+    <div class="cards">
+      <p><a href="mailto:info@yarids.com">info.yarids@gmail.com</a></p>
+      <p>
+        <img src="images/icons/visa-straight-32px.png">
+        <img src="images/icons/mastercard-straight-32px.png">
+        <img src="images/icons/discover-straight-32px.png">
+        <img src="images/icons/american-express-straight-32px.png">
+      </p>
+    </div>
+  </div>
 </div>
