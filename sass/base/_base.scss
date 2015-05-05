@@ -46,14 +46,14 @@ a {
 }
 
 p {
-	margin: 0 0 em(30px, 18px);
+	margin: 0 0 em(30, 18);
 	font-weight: $font-weight--light;
-	font-size: em(18px);
-	line-height: (27px/18px);
+	font-size: em(13);
+	line-height: (27/18);
 }
 
 blockquote {
-  font-size: em(24px);
+  font-size: em(24);
   font-style : italic;
   font-weight: $font-weight--light;
   margin: em(32px, 24px) 0;

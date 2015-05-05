@@ -19,11 +19,11 @@ $TweetPHP = new TweetPHP(array(
     <div class="sidebar">
       <div class="navigation">
         <ul>
-          <li><a href="">Meet the Girls</a></li>
-          <li><a href="">Designers</a></li>
-          <li><a href="">Wishlist</a></li>
-          <li><a href="">Our Philosophy</a></li>
-          <li><a href="">Our Shops</a></li>
+          <li><a href="story.php">Our Story</a></li>
+          <li><a href="philosophy.php">Our Philosophy</a></li>
+          <li><a href="designers.php">Designers</a></li>
+          <li><a href="wishlist.php">Wishlist</a></li>
+          <li><a href="stores.php">Our Stores</a></li>
         </ul>
       </div>
       <div class="social">

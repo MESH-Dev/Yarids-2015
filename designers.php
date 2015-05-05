@@ -8,8 +8,146 @@
 
       <!-- this is where the content goes -->
 
-    </div>
+      <div class="main-content">
+        <div class="fifth">
+          <h1>Shoe Designers</h1>
 
+          <hr>
+
+          <ul>
+  					<li>Aerin</li>
+  					<li>Amalfi</li>
+  					<li>Aquatalia</li>
+  					<li>Arche</li>
+  					<li>Ash</li>
+  					<li>B Brian Atwood</li>
+  					<li>Bettye Muller</li>
+  					<li>Claudia Ciuti</li>
+  					<li>Donald J Pliner</li>
+  					<li>DVF</li>
+  					<li>Eric Michael</li>
+  					<li>Ferragamo</li>
+  					<li>The Flexx</li>
+  					<li>French Soles</li>
+  					<li>Frye</li>
+  					<li>Giuseppe Zanotti</li>
+  					<li>Hunter</li>
+  					<li>J Renee</li>
+  					<li>Jack Rogers</li>
+  					<li>Johnston &amp; Murphy</li>
+  					<li>Kate Spade</li>
+  					<li>LK Bennett</li>
+  					<li>Merrell</li>
+  					<li>Nina</li>
+  					<li>Pas de Rouge</li>
+  					<li>Rachel Zoe</li>
+  					<li>Ramon Tenza</li>
+  					<li>Rebecca Minkoff</li>
+  					<li>Salpy</li>
+  					<li>Sam Edelman</li>
+  					<li>Sesto Meucci</li>
+  					<li>Sorel</li>
+  					<li>Sperry Topsider</li>
+  					<li>Stuart Weitzman</li>
+  					<li>Superga</li>
+  					<li>Toms</li>
+  					<li>Tory Burch</li>
+  					<li>Ugg</li>
+  					<li>Van Eli</li>
+  					<li>Vince Camuto</li>
+  				</ul>
+
+        </div>
+
+        <div class="fifth">
+          <h1>Accessory Designers</h1>
+
+          <hr>
+
+          <ul>
+						<li>B-low the Belt belts and handbags</li>
+						<li>Brighton jewelry<br>
+						  <span>only in Lewisburg</span></li>
+						<li>butter LONDON nail polish</li>
+						<li>Dr. Brandt skin care<br>
+						  <span>only in Charleston</span></li>
+						<li>Donni Charm scarves</li>
+						<li>Julie Vos jewelry</li>
+						<li>Kate Spade jewelry</li>
+						<li>Lollia Skincare<br>
+							<span>only in Charleston, Roanoke, and Lewisburg</span></li>
+						<li>Lulu Dk tattoos</li>
+						<li>Maya Brenner jewelry</li>
+						<li>Philosophy skin care<br>
+						  <span>only in Lewisburg</span></li>
+						<li>Shawlsmith</li>
+						<li>Smashbox and Kevyn Aucoin cosmetics</li>
+						<li>Thad Cline jewelry</li>
+						<li>Tory Burch</li>
+						<li>Yarnz</li>
+					</ul>
+
+        </div>
+
+        <div class="fifth">
+          <h1>Handbag Designers</h1>
+
+          <hr>
+
+          <ul>
+						<li>Brighton<br>
+							<span>only in Lewisburg</span></li>
+						<li>Botkier</li>
+						<li>Eric Javits</li>
+						<li>Foley and Corrina</li>
+						<li>Halston Heritage</li>
+						<li>Kate Spade handbags</li>
+						<li>Longchamp</li>
+						<li>Mary Frances</li>
+						<li>My Flat in London<br>
+							<span>only in Greenbrier</span></li>
+						<li>Orla Kiely</li>
+						<li>Rebecca Minkoff</li>
+						<li>Sondra Roberts</li>
+						<li>Tory Burch</li>
+					</ul>
+
+        </div>
+
+        <div class="fifth">
+          <h1>Sunglass Designers</h1>
+
+          <hr>
+
+          <ul>
+  					<li>Brighton</li>
+  					<li>Illesteva</li>
+  					<li>Ray Ban</li>
+  					<li>Tory Burch</li>
+  				</ul>
+
+        </div>
+
+        <div class="fifth">
+          <h1>Men's Shoe Designers</h1>
+
+          <hr>
+
+          <ul>
+						<li>Allen Edmonds</li>
+						<li>Donald J Pliner</li>
+						<li>Frye</li>
+						<li>Cole Haan</li>
+						<li>Merrell</li>
+						<li>Sperry Topsider</li>
+						<li>Too Boot New York</li>
+						<li>Ugg</li>
+					</ul>
+          
+        </div>
+
+      </div>
+    </div>
   </div>
 
 <?php include('partials/footer.php'); ?>
