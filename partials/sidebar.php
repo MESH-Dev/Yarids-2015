@@ -35,6 +35,9 @@ $TweetPHP = new TweetPHP(array(
   <div class="row">
     <div class="twitter">
         <?php echo $TweetPHP->get_tweet_list(); ?>
+        <div class="social">
+          <a href="" target="_blank"><i class="fa fa-lg fa-twitter-square twitter-icon"></i></a>
+        </div>
     </div>
   </div>
   <div class="row">

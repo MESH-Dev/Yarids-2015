@@ -80,5 +80,15 @@
 }
 
 .active {
-  color: #f26cb7;
+  color: #f26cb7 !important;
+}
+
+.meta {
+  display: none;
+}
+
+.twitter-icon {
+  display: block;
+  text-align: right;
+  width: 100%;
 }

@@ -967,7 +967,19 @@ html, body {
 
 /* line 82, sass/layout/_main.scss */
 .active {
-  color: #f26cb7;
+  color: #f26cb7 !important;
+}
+
+/* line 86, sass/layout/_main.scss */
+.meta {
+  display: none;
+}
+
+/* line 90, sass/layout/_main.scss */
+.twitter-icon {
+  display: block;
+  text-align: right;
+  width: 100%;
 }
 
 /* line 6, sass/modules/_modules.scss */
