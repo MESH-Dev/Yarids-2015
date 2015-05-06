@@ -19,11 +19,11 @@ $TweetPHP = new TweetPHP(array(
     <div class="sidebar">
       <div class="navigation">
         <ul>
-          <li><a href="story.php">Our Story</a></li>
-          <li><a href="philosophy.php">Our Philosophy</a></li>
-          <li><a href="designers.php">Designers</a></li>
-          <li><a href="wishlist.php">Wishlist</a></li>
-          <li><a href="stores.php">Our Stores</a></li>
+          <li><a href="story.php" <?php if($_SERVER['PHP_SELF'] == '/story.php'){echo 'class="active"';}?>>Our Story</a></li>
+          <li><a href="philosophy.php" <?php if($_SERVER['PHP_SELF'] == '/philosophy.php'){echo 'class="active"';}?>>Our Philosophy</a></li>
+          <li><a href="designers.php" <?php if($_SERVER['PHP_SELF'] == '/designers.php'){echo 'class="active"';}?>>Designers</a></li>
+          <li><a href="wishlist.php" <?php if($_SERVER['PHP_SELF'] == '/wishlist.php'){echo 'class="active"';}?>>Wishlist</a></li>
+          <li><a href="stores.php" <?php if($_SERVER['PHP_SELF'] == '/stores.php'){echo 'class="active"';}?>>Our Stores</a></li>
         </ul>
       </div>
       <div class="social">

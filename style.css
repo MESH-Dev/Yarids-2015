@@ -965,6 +965,11 @@ html, body {
   font-style: italic;
 }
 
+/* line 82, sass/layout/_main.scss */
+.active {
+  color: #f26cb7;
+}
+
 /* line 6, sass/modules/_modules.scss */
 .homepage-fullscreen .callout {
   text-align: center;
