@@ -42,11 +42,13 @@
       font-weight: 300;
       line-height: 1.7;
 
-      span {
+      p {
         margin-left: 5px;
         font-style: italic;
         font-size: em(11);
         line-height: 1.2;
+        margin-top: 5px;
+        margin-bottom: 5px;
       }
     }
   }
@@ -73,8 +75,12 @@
       margin-bottom: 0;
     }
     .featuring {
-      font-size: em(13);
+      margin-left: 5px;
       font-style: italic;
+      font-size: em(11);
+      line-height: 1.2;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
 }
@@ -91,4 +97,37 @@
   display: block;
   text-align: right;
   width: 100%;
+}
+
+.responsive-menu {
+  display: none;
+  cursor: pointer;
+
+  @include mq($mobile-landscape-width, 'max-width') {
+    display: block;
+  }
+
+  .fa-bars {
+    margin: 25px 0 10px;
+  }
+
+  .fa-close {
+    margin: 25px 0;
+  }
+}
+
+.desktop-menu {
+
+  @include mq($mobile-landscape-width, 'max-width') {
+    display: none !important;
+  }
+
+}
+
+.responsive {
+
+  @include mq($mobile-landscape-width, 'min-width') {
+    display: none !important;
+  }
+
 }

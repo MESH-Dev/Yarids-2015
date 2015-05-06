@@ -14,7 +14,7 @@ $TweetPHP = new TweetPHP(array(
 
 ?>
 
-<div class="three columns">
+<div class="three columns desktop-menu">
   <div class="row">
     <div class="sidebar">
       <div class="navigation">
@@ -27,8 +27,8 @@ $TweetPHP = new TweetPHP(array(
         </ul>
       </div>
       <div class="social">
-        <a href="" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
-        <a href="" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
+        <a href="https://www.facebook.com/pages/Yarids-Charleston/64910405871" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
+        <a href="https://instagram.com/yaridsshoes/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
       </div>
     </div>
   </div>

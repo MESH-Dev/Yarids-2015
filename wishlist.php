@@ -20,7 +20,7 @@
       <!-- this is where the content goes -->
       <div class="main-content">
 
-        <h1><strong>Callout here!</strong> - Follow our Instagram to see more products!</h1>
+        <h1><strong>Yarid's Wishlist</strong> - Follow our Instagram to see more products!</h1>
 
         <hr>
 

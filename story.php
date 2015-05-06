@@ -2,11 +2,11 @@
 
   <div class="container">
 
+    <div class="row">
+
     <?php include('partials/sidebar.php'); ?>
 
       <!-- this is where the content goes -->
-
-
 
       <div class="nine columns">
 
@@ -40,7 +40,7 @@
 
       </div>
 
-
+    </div>
 
   </div>
 

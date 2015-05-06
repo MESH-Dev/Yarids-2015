@@ -731,12 +731,18 @@ h4 {
 
 /* line 42, sass/base/_base.scss */
 a {
-  color: palette(grey, dark);
+  color: #f26cb7;
   text-decoration: none;
   font-weight: 400;
+  word-break: break-word;
 }
 
-/* line 48, sass/base/_base.scss */
+/* line 49, sass/base/_base.scss */
+a:hover {
+  opacity: 0.7;
+}
+
+/* line 53, sass/base/_base.scss */
 p {
   margin: 0 0 1.66667em;
   font-weight: 300;
@@ -744,7 +750,7 @@ p {
   line-height: 1.5;
 }
 
-/* line 55, sass/base/_base.scss */
+/* line 60, sass/base/_base.scss */
 blockquote {
   font-size: 1.5em;
   font-style: italic;
@@ -754,14 +760,14 @@ blockquote {
   border-left: solid 0.33333em palette(grey, xx-light);
 }
 
-/* line 66, sass/base/_base.scss */
+/* line 71, sass/base/_base.scss */
 img {
   margin-bottom: 1.5pxem;
   max-width: 100%;
   height: auto;
 }
 
-/* line 74, sass/base/_base.scss */
+/* line 79, sass/base/_base.scss */
 ul,
 li {
   margin: 0;
@@ -769,7 +775,7 @@ li {
   list-style-type: none;
 }
 
-/* line 83, sass/base/_base.scss */
+/* line 88, sass/base/_base.scss */
 input,
 textarea {
   display: block;
@@ -779,22 +785,22 @@ textarea {
   border: 0;
 }
 
-/* line 92, sass/base/_base.scss */
+/* line 97, sass/base/_base.scss */
 input:focus,
 textarea:focus {
   transition: 1;
 }
 
-/* line 99, sass/base/_base.scss */
+/* line 104, sass/base/_base.scss */
 button {
   outline: 0;
 }
 
-/* line 105, sass/base/_base.scss */
+/* line 110, sass/base/_base.scss */
 footer {
   border-top: 1px solid palette(grey, xx-light);
 }
-/* line 107, sass/base/_base.scss */
+/* line 112, sass/base/_base.scss */
 footer p {
   font-size: 1pxem;
   margin-top: 1.375em;
@@ -816,19 +822,19 @@ footer p {
   text-transform: uppercase;
 }
 
-/* line 18, sass/layout/_menus.scss */
+/* line 19, sass/layout/_menus.scss */
 .social a {
   color: black;
 }
 
-/* line 22, sass/layout/_menus.scss */
+/* line 23, sass/layout/_menus.scss */
 .twitter {
   padding: 25px;
   border: 4px solid black;
   font-size: 1em;
 }
 
-/* line 28, sass/layout/_menus.scss */
+/* line 29, sass/layout/_menus.scss */
 .cards {
   font-size: 0.8125em;
   text-align: center;
@@ -927,59 +933,99 @@ html, body {
   line-height: 1.7;
 }
 /* line 45, sass/layout/_main.scss */
-.main-content ul li span {
+.main-content ul li p {
   margin-left: 5px;
   font-style: italic;
   font-size: 0.6875em;
   line-height: 1.2;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-/* line 54, sass/layout/_main.scss */
+/* line 56, sass/layout/_main.scss */
 .main-content .instagram-image {
   display: inline-block;
 }
-/* line 57, sass/layout/_main.scss */
+/* line 59, sass/layout/_main.scss */
 .main-content .instagram-caption {
   margin-top: 15px;
   height: 175px;
 }
-/* line 62, sass/layout/_main.scss */
+/* line 64, sass/layout/_main.scss */
 .main-content .third {
   float: left;
   width: 33%;
   padding-right: 10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 62, sass/layout/_main.scss */
+  /* line 64, sass/layout/_main.scss */
   .main-content .third {
     width: 100%;
   }
 }
-/* line 71, sass/layout/_main.scss */
+/* line 73, sass/layout/_main.scss */
 .main-content .third h3 {
   font-size: 1em;
   margin-bottom: 0;
 }
-/* line 75, sass/layout/_main.scss */
+/* line 77, sass/layout/_main.scss */
 .main-content .third .featuring {
-  font-size: 0.8125em;
+  margin-left: 5px;
   font-style: italic;
+  font-size: 0.6875em;
+  line-height: 1.2;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-/* line 82, sass/layout/_main.scss */
+/* line 88, sass/layout/_main.scss */
 .active {
   color: #f26cb7 !important;
 }
 
-/* line 86, sass/layout/_main.scss */
+/* line 92, sass/layout/_main.scss */
 .meta {
   display: none;
 }
 
-/* line 90, sass/layout/_main.scss */
+/* line 96, sass/layout/_main.scss */
 .twitter-icon {
   display: block;
   text-align: right;
   width: 100%;
+}
+
+/* line 102, sass/layout/_main.scss */
+.responsive-menu {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 420px) {
+  /* line 102, sass/layout/_main.scss */
+  .responsive-menu {
+    display: block;
+  }
+}
+/* line 110, sass/layout/_main.scss */
+.responsive-menu .fa-bars {
+  margin: 25px 0 10px;
+}
+/* line 114, sass/layout/_main.scss */
+.responsive-menu .fa-close {
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 420px) {
+  /* line 119, sass/layout/_main.scss */
+  .desktop-menu {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  /* line 127, sass/layout/_main.scss */
+  .responsive {
+    display: none !important;
+  }
 }
 
 /* line 6, sass/modules/_modules.scss */
