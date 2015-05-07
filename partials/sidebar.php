@@ -15,40 +15,39 @@ $TweetPHP = new TweetPHP(array(
 ?>
 
 <div class="three columns desktop-menu">
-  <div class="row">
-    <div class="sidebar">
-      <div class="navigation">
-        <ul>
-          <li><a href="story.php" <?php if($_SERVER['PHP_SELF'] == '/story.php'){echo 'class="active"';}?>>Our Story</a></li>
-          <li><a href="philosophy.php" <?php if($_SERVER['PHP_SELF'] == '/philosophy.php'){echo 'class="active"';}?>>Our Philosophy</a></li>
-          <li><a href="designers.php" <?php if($_SERVER['PHP_SELF'] == '/designers.php'){echo 'class="active"';}?>>Designers</a></li>
-          <li><a href="wishlist.php" <?php if($_SERVER['PHP_SELF'] == '/wishlist.php'){echo 'class="active"';}?>>Wishlist</a></li>
-          <li><a href="stores.php" <?php if($_SERVER['PHP_SELF'] == '/stores.php'){echo 'class="active"';}?>>Our Stores</a></li>
-        </ul>
-      </div>
+
+  <div class="sidebar fixed">
+    <div class="navigation">
+      <ul>
+        <li><a href="story.php" <?php if($_SERVER['PHP_SELF'] == '/story.php'){echo 'class="active"';}?>>Our Story</a></li>
+        <li><a href="philosophy.php" <?php if($_SERVER['PHP_SELF'] == '/philosophy.php'){echo 'class="active"';}?>>Our Philosophy</a></li>
+        <li><a href="designers.php" <?php if($_SERVER['PHP_SELF'] == '/designers.php'){echo 'class="active"';}?>>Designers</a></li>
+        <li><a href="wishlist.php" <?php if($_SERVER['PHP_SELF'] == '/wishlist.php'){echo 'class="active"';}?>>Wishlist</a></li>
+        <li><a href="stores.php" <?php if($_SERVER['PHP_SELF'] == '/stores.php'){echo 'class="active"';}?>>Our Stores</a></li>
+      </ul>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/pages/Yarids-Charleston/64910405871" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
+      <a href="https://instagram.com/yaridsshoes/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
+    </div>
+  </div>
+
+
+  <div class="twitter fixed">
+      <?php echo $TweetPHP->get_tweet_list(); ?>
       <div class="social">
-        <a href="https://www.facebook.com/pages/Yarids-Charleston/64910405871" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
-        <a href="https://instagram.com/yaridsshoes/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
+        <a href="" target="_blank"><i class="fa fa-lg fa-twitter-square twitter-icon"></i></a>
       </div>
-    </div>
   </div>
-  <div class="row">
-    <div class="twitter">
-        <?php echo $TweetPHP->get_tweet_list(); ?>
-        <div class="social">
-          <a href="" target="_blank"><i class="fa fa-lg fa-twitter-square twitter-icon"></i></a>
-        </div>
-    </div>
+
+  <div class="cards fixed">
+    <p><a href="mailto:info@yarids.com">info.yarids@gmail.com</a></p>
+    <p>
+      <img src="images/icons/visa-straight-32px.png">
+      <img src="images/icons/mastercard-straight-32px.png">
+      <img src="images/icons/discover-straight-32px.png">
+      <img src="images/icons/american-express-straight-32px.png">
+    </p>
   </div>
-  <div class="row">
-    <div class="cards">
-      <p><a href="mailto:info@yarids.com">info.yarids@gmail.com</a></p>
-      <p>
-        <img src="images/icons/visa-straight-32px.png">
-        <img src="images/icons/mastercard-straight-32px.png">
-        <img src="images/icons/discover-straight-32px.png">
-        <img src="images/icons/american-express-straight-32px.png">
-      </p>
-    </div>
-  </div>
+
 </div>

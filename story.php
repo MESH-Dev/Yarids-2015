@@ -8,7 +8,7 @@
 
       <!-- this is where the content goes -->
 
-      <div class="nine columns">
+      <div class="nine columns right">
 
         <div class="main-content">
 

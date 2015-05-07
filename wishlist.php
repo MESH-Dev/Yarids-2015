@@ -15,7 +15,7 @@
 
     <?php include('partials/sidebar.php'); ?>
 
-    <div class="nine columns">
+    <div class="nine columns right">
 
       <!-- this is where the content goes -->
       <div class="main-content">

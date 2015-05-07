@@ -47,7 +47,7 @@ else {
 	<div class="container">
 		<div class="row">
       <div class="three columns">
-        <div class="logo">
+        <div class="logo fixed">
   				<a href="/"><img src="images/logo.png" /></a>
 					<div class="responsive-menu">
 						<i class="fa fa-close fa-2x"></i>

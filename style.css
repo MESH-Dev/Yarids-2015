@@ -170,10 +170,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 /* TABLET (PORTRAIT)
  * ------------------------------------------------ */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 960px) and (max-width: 959px) {
   /* line 25, sass/grid/_grid.scss */
   .container {
-    width: 768px;
+    width: 960px;
   }
   /* line 29, sass/grid/_grid.scss */
   .container .column.alpha,
@@ -205,114 +205,114 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   /* line 58, sass/grid/_dependencies.scss */
   .container .one.column,
   .container .one.columns {
-    width: 44px;
+    width: 60px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .two.columns {
-    width: 108px;
+    width: 140px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .three.columns {
-    width: 172px;
+    width: 220px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .four.columns {
-    width: 236px;
-  }
-  /* line 61, sass/grid/_dependencies.scss */
-  .container .five.columns {
     width: 300px;
   }
   /* line 61, sass/grid/_dependencies.scss */
+  .container .five.columns {
+    width: 380px;
+  }
+  /* line 61, sass/grid/_dependencies.scss */
   .container .six.columns {
-    width: 364px;
+    width: 460px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .seven.columns {
-    width: 428px;
+    width: 540px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .eight.columns {
-    width: 492px;
-  }
-  /* line 61, sass/grid/_dependencies.scss */
-  .container .nine.columns {
-    width: 556px;
-  }
-  /* line 61, sass/grid/_dependencies.scss */
-  .container .ten.columns {
     width: 620px;
   }
   /* line 61, sass/grid/_dependencies.scss */
+  .container .nine.columns {
+    width: 700px;
+  }
+  /* line 61, sass/grid/_dependencies.scss */
+  .container .ten.columns {
+    width: 780px;
+  }
+  /* line 61, sass/grid/_dependencies.scss */
   .container .eleven.columns {
-    width: 684px;
+    width: 860px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .twelve.columns {
-    width: 748px;
+    width: 940px;
   }
   /* line 64, sass/grid/_dependencies.scss */
   .container .one-third.column {
-    width: 236px;
+    width: 300px;
   }
   /* line 65, sass/grid/_dependencies.scss */
   .container .two-thirds.column {
-    width: 492px;
+    width: 620px;
   }
   /* line 66, sass/grid/_dependencies.scss */
   .container .full-width.columns {
-    width: 768px;
+    width: 960px;
     margin-left: 0;
     margin-right: 0;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-one {
-    padding-left: 64px;
+    padding-left: 80px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-two {
-    padding-left: 128px;
+    padding-left: 160px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-three {
-    padding-left: 192px;
+    padding-left: 240px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-four {
-    padding-left: 256px;
-  }
-  /* line 83, sass/grid/_dependencies.scss */
-  .container .offset-by-five {
     padding-left: 320px;
   }
   /* line 83, sass/grid/_dependencies.scss */
+  .container .offset-by-five {
+    padding-left: 400px;
+  }
+  /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-six {
-    padding-left: 384px;
+    padding-left: 480px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-seven {
-    padding-left: 448px;
+    padding-left: 560px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-eight {
-    padding-left: 512px;
-  }
-  /* line 83, sass/grid/_dependencies.scss */
-  .container .offset-by-nine {
-    padding-left: 576px;
-  }
-  /* line 83, sass/grid/_dependencies.scss */
-  .container .offset-by-ten {
     padding-left: 640px;
   }
   /* line 83, sass/grid/_dependencies.scss */
+  .container .offset-by-nine {
+    padding-left: 720px;
+  }
+  /* line 83, sass/grid/_dependencies.scss */
+  .container .offset-by-ten {
+    padding-left: 800px;
+  }
+  /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-eleven {
-    padding-left: 704px;
+    padding-left: 880px;
   }
 }
 /*  MOBILE (PORTRAIT)
  * ------------------------------------------------ */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 959px) {
   /* line 91, sass/grid/_dependencies.scss */
   .container {
     width: 300px;
@@ -352,7 +352,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* MOBILE (LANDSCAPE)
  * ------------------------------------------------ */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 959px) {
   /* line 91, sass/grid/_dependencies.scss */
   .container {
     width: 420px;
@@ -811,35 +811,63 @@ footer p {
   padding: 25px;
   border: 4px solid black;
   background: white;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 960px) {
+  /* line 1, sass/layout/_menus.scss */
+  .sidebar {
+    top: 210px;
+  }
 }
 
-/* line 9, sass/layout/_menus.scss */
+/* line 14, sass/layout/_menus.scss */
 .navigation ul li {
   margin-bottom: 20px;
 }
-/* line 11, sass/layout/_menus.scss */
+/* line 16, sass/layout/_menus.scss */
 .navigation ul li a {
   color: black;
   text-transform: uppercase;
 }
 
-/* line 20, sass/layout/_menus.scss */
+/* line 25, sass/layout/_menus.scss */
 .social a {
   color: black;
 }
 
-/* line 24, sass/layout/_menus.scss */
+/* line 29, sass/layout/_menus.scss */
 .twitter {
   padding: 25px;
   border: 4px solid black;
   font-size: 1em;
   background: white;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 960px) {
+  /* line 29, sass/layout/_menus.scss */
+  .twitter {
+    top: 535px;
+  }
 }
 
-/* line 31, sass/layout/_menus.scss */
+/* line 41, sass/layout/_menus.scss */
 .cards {
   font-size: 0.8125em;
   text-align: center;
+}
+@media screen and (min-width: 960px) {
+  /* line 41, sass/layout/_menus.scss */
+  .cards {
+    top: 760px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /* line 50, sass/layout/_menus.scss */
+  .fixed {
+    position: fixed;
+    width: inherit;
+  }
 }
 
 /* line 32, sass/utilities/_mixins.scss */
@@ -885,6 +913,12 @@ html, body {
   text-align: center;
   background: white;
 }
+@media screen and (min-width: 960px) {
+  /* line 1, sass/layout/_header.scss */
+  .logo {
+    top: 2px;
+  }
+}
 
 /* line 1, sass/layout/_main.scss */
 .main-content {
@@ -912,7 +946,7 @@ html, body {
   width: 50%;
   padding-right: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   /* line 20, sass/layout/_main.scss */
   .main-content .half {
     width: 100%;
@@ -923,20 +957,21 @@ html, body {
   float: left;
   width: 20%;
   padding-right: 10px;
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   /* line 30, sass/layout/_main.scss */
   .main-content .fifth {
     width: 100%;
   }
 }
-/* line 41, sass/layout/_main.scss */
+/* line 42, sass/layout/_main.scss */
 .main-content ul li {
   font-size: 0.8125em;
   font-weight: 300;
   line-height: 1.7;
 }
-/* line 46, sass/layout/_main.scss */
+/* line 47, sass/layout/_main.scss */
 .main-content ul li p {
   margin-left: 5px;
   font-style: italic;
@@ -945,33 +980,33 @@ html, body {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 57, sass/layout/_main.scss */
+/* line 58, sass/layout/_main.scss */
 .main-content .instagram-image {
   display: inline-block;
 }
-/* line 60, sass/layout/_main.scss */
+/* line 61, sass/layout/_main.scss */
 .main-content .instagram-caption {
   margin-top: 15px;
   height: 175px;
 }
-/* line 65, sass/layout/_main.scss */
+/* line 66, sass/layout/_main.scss */
 .main-content .third {
   float: left;
   width: 33%;
   padding-right: 10px;
 }
-@media screen and (max-width: 768px) {
-  /* line 65, sass/layout/_main.scss */
+@media screen and (max-width: 960px) {
+  /* line 66, sass/layout/_main.scss */
   .main-content .third {
     width: 100%;
   }
 }
-/* line 74, sass/layout/_main.scss */
+/* line 75, sass/layout/_main.scss */
 .main-content .third h3 {
   font-size: 1em;
   margin-bottom: 0;
 }
-/* line 78, sass/layout/_main.scss */
+/* line 79, sass/layout/_main.scss */
 .main-content .third .featuring {
   margin-left: 5px;
   font-style: italic;
@@ -981,55 +1016,60 @@ html, body {
   margin-bottom: 5px;
 }
 
-/* line 89, sass/layout/_main.scss */
+/* line 90, sass/layout/_main.scss */
 .active {
   color: #f26cb7 !important;
 }
 
-/* line 93, sass/layout/_main.scss */
+/* line 94, sass/layout/_main.scss */
 .meta {
   display: none;
 }
 
-/* line 97, sass/layout/_main.scss */
+/* line 98, sass/layout/_main.scss */
 .twitter-icon {
   display: block;
   text-align: right;
   width: 100%;
 }
 
-/* line 103, sass/layout/_main.scss */
+/* line 104, sass/layout/_main.scss */
 .responsive-menu {
   display: none;
   cursor: pointer;
 }
-@media screen and (max-width: 420px) {
-  /* line 103, sass/layout/_main.scss */
+@media screen and (max-width: 960px) {
+  /* line 104, sass/layout/_main.scss */
   .responsive-menu {
     display: block;
   }
 }
-/* line 111, sass/layout/_main.scss */
+/* line 112, sass/layout/_main.scss */
 .responsive-menu .fa-bars {
   margin: 25px 0 10px;
 }
-/* line 115, sass/layout/_main.scss */
+/* line 116, sass/layout/_main.scss */
 .responsive-menu .fa-close {
   margin: 25px 0;
 }
 
-@media screen and (max-width: 420px) {
-  /* line 120, sass/layout/_main.scss */
+@media screen and (max-width: 960px) {
+  /* line 121, sass/layout/_main.scss */
   .desktop-menu {
     display: none !important;
   }
 }
 
 @media screen and (min-width: 420px) {
-  /* line 128, sass/layout/_main.scss */
+  /* line 129, sass/layout/_main.scss */
   .responsive {
     display: none !important;
   }
+}
+
+/* line 136, sass/layout/_main.scss */
+.right {
+  float: right !important;
 }
 
 /* line 6, sass/modules/_modules.scss */

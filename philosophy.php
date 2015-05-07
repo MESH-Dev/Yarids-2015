@@ -6,7 +6,7 @@
 
       <?php include('partials/sidebar.php'); ?>
 
-      <div class="nine columns">
+      <div class="nine columns right">
 
         <div class="main-content">
 
