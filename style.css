@@ -1060,7 +1060,7 @@ html, body {
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 960px) {
   /* line 129, sass/layout/_main.scss */
   .responsive {
     display: none !important;

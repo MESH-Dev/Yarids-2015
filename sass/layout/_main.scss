@@ -128,7 +128,7 @@
 
 .responsive {
 
-  @include mq($mobile-landscape-width, 'min-width') {
+  @include mq($tablet-width, 'min-width') {
     display: none !important;
   }
 
