@@ -1,5 +1,29 @@
 <!DOCTYPE html>
-<html>
+
+<?php
+
+if($_SERVER['PHP_SELF'] == '/story.php'){
+	$imageURL = 'images/s1.jpg';
+}
+elseif($_SERVER['PHP_SELF'] == '/philosophy.php') {
+	$imageURL = 'images/s2.jpg';
+}
+elseif($_SERVER['PHP_SELF'] == '/designers.php') {
+	$imageURL = 'images/s3.jpg';
+}
+elseif($_SERVER['PHP_SELF'] == '/wishlist.php') {
+	$imageURL = 'images/s2.jpg';
+}
+elseif($_SERVER['PHP_SELF'] == '/stores.php') {
+
+}
+else {
+	$imageURL = 'images/s1.jpg';
+}
+
+?>
+
+<html style="background: url(<?php echo $imageURL; ?>) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen">
 
 <head>
 	<meta charset="utf-8">

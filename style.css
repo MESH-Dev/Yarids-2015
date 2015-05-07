@@ -810,31 +810,33 @@ footer p {
 .sidebar {
   padding: 25px;
   border: 4px solid black;
+  background: white;
 }
 
-/* line 8, sass/layout/_menus.scss */
+/* line 9, sass/layout/_menus.scss */
 .navigation ul li {
   margin-bottom: 20px;
 }
-/* line 10, sass/layout/_menus.scss */
+/* line 11, sass/layout/_menus.scss */
 .navigation ul li a {
   color: black;
   text-transform: uppercase;
 }
 
-/* line 19, sass/layout/_menus.scss */
+/* line 20, sass/layout/_menus.scss */
 .social a {
   color: black;
 }
 
-/* line 23, sass/layout/_menus.scss */
+/* line 24, sass/layout/_menus.scss */
 .twitter {
   padding: 25px;
   border: 4px solid black;
   font-size: 1em;
+  background: white;
 }
 
-/* line 29, sass/layout/_menus.scss */
+/* line 31, sass/layout/_menus.scss */
 .cards {
   font-size: 0.8125em;
   text-align: center;
@@ -881,6 +883,7 @@ html, body {
   padding: 15px;
   border: 4px solid black;
   text-align: center;
+  background: white;
 }
 
 /* line 1, sass/layout/_main.scss */
@@ -890,49 +893,50 @@ html, body {
   float: left;
   width: 100%;
   margin-bottom: 1.875em;
+  background: white;
 }
-/* line 8, sass/layout/_main.scss */
+/* line 9, sass/layout/_main.scss */
 .main-content h1 {
   margin: 0;
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 400;
 }
-/* line 15, sass/layout/_main.scss */
+/* line 16, sass/layout/_main.scss */
 .main-content hr {
   margin: 16px 0;
 }
-/* line 19, sass/layout/_main.scss */
+/* line 20, sass/layout/_main.scss */
 .main-content .half {
   float: left;
   width: 50%;
   padding-right: 10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 19, sass/layout/_main.scss */
+  /* line 20, sass/layout/_main.scss */
   .main-content .half {
     width: 100%;
   }
 }
-/* line 29, sass/layout/_main.scss */
+/* line 30, sass/layout/_main.scss */
 .main-content .fifth {
   float: left;
   width: 20%;
   padding-right: 10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 29, sass/layout/_main.scss */
+  /* line 30, sass/layout/_main.scss */
   .main-content .fifth {
     width: 100%;
   }
 }
-/* line 40, sass/layout/_main.scss */
+/* line 41, sass/layout/_main.scss */
 .main-content ul li {
   font-size: 0.8125em;
   font-weight: 300;
   line-height: 1.7;
 }
-/* line 45, sass/layout/_main.scss */
+/* line 46, sass/layout/_main.scss */
 .main-content ul li p {
   margin-left: 5px;
   font-style: italic;
@@ -941,33 +945,33 @@ html, body {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 56, sass/layout/_main.scss */
+/* line 57, sass/layout/_main.scss */
 .main-content .instagram-image {
   display: inline-block;
 }
-/* line 59, sass/layout/_main.scss */
+/* line 60, sass/layout/_main.scss */
 .main-content .instagram-caption {
   margin-top: 15px;
   height: 175px;
 }
-/* line 64, sass/layout/_main.scss */
+/* line 65, sass/layout/_main.scss */
 .main-content .third {
   float: left;
   width: 33%;
   padding-right: 10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 64, sass/layout/_main.scss */
+  /* line 65, sass/layout/_main.scss */
   .main-content .third {
     width: 100%;
   }
 }
-/* line 73, sass/layout/_main.scss */
+/* line 74, sass/layout/_main.scss */
 .main-content .third h3 {
   font-size: 1em;
   margin-bottom: 0;
 }
-/* line 77, sass/layout/_main.scss */
+/* line 78, sass/layout/_main.scss */
 .main-content .third .featuring {
   margin-left: 5px;
   font-style: italic;
@@ -977,52 +981,52 @@ html, body {
   margin-bottom: 5px;
 }
 
-/* line 88, sass/layout/_main.scss */
+/* line 89, sass/layout/_main.scss */
 .active {
   color: #f26cb7 !important;
 }
 
-/* line 92, sass/layout/_main.scss */
+/* line 93, sass/layout/_main.scss */
 .meta {
   display: none;
 }
 
-/* line 96, sass/layout/_main.scss */
+/* line 97, sass/layout/_main.scss */
 .twitter-icon {
   display: block;
   text-align: right;
   width: 100%;
 }
 
-/* line 102, sass/layout/_main.scss */
+/* line 103, sass/layout/_main.scss */
 .responsive-menu {
   display: none;
   cursor: pointer;
 }
 @media screen and (max-width: 420px) {
-  /* line 102, sass/layout/_main.scss */
+  /* line 103, sass/layout/_main.scss */
   .responsive-menu {
     display: block;
   }
 }
-/* line 110, sass/layout/_main.scss */
+/* line 111, sass/layout/_main.scss */
 .responsive-menu .fa-bars {
   margin: 25px 0 10px;
 }
-/* line 114, sass/layout/_main.scss */
+/* line 115, sass/layout/_main.scss */
 .responsive-menu .fa-close {
   margin: 25px 0;
 }
 
 @media screen and (max-width: 420px) {
-  /* line 119, sass/layout/_main.scss */
+  /* line 120, sass/layout/_main.scss */
   .desktop-menu {
     display: none !important;
   }
 }
 
 @media screen and (min-width: 420px) {
-  /* line 127, sass/layout/_main.scss */
+  /* line 128, sass/layout/_main.scss */
   .responsive {
     display: none !important;
   }
