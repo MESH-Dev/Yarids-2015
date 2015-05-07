@@ -12,13 +12,13 @@ elseif($_SERVER['PHP_SELF'] == '/designers.php') {
 	$imageURL = 'images/s3.jpg';
 }
 elseif($_SERVER['PHP_SELF'] == '/wishlist.php') {
-	$imageURL = 'images/s2.jpg';
+	$imageURL = 'images/s1.jpg';
 }
 elseif($_SERVER['PHP_SELF'] == '/stores.php') {
-
+	$imageURL = 'images/s2.jpg';
 }
 else {
-	$imageURL = 'images/s1.jpg';
+	$imageURL = 'images/s3.jpg';
 }
 
 ?>
