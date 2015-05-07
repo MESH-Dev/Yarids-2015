@@ -18,7 +18,7 @@ elseif($_SERVER['PHP_SELF'] == '/stores.php') {
 	$imageURL = 'images/s2.jpg';
 }
 else {
-	$imageURL = 'images/s3.jpg';
+	$imageURL = 'images/s4.gif';
 }
 
 ?>
