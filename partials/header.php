@@ -2,28 +2,46 @@
 
 <?php
 
-if($_SERVER['PHP_SELF'] == '/story.php'){
-	$imageURL = 'images/s1.jpg';
-}
-elseif($_SERVER['PHP_SELF'] == '/philosophy.php') {
-	$imageURL = 'images/s2.jpg';
-}
-elseif($_SERVER['PHP_SELF'] == '/designers.php') {
-	$imageURL = 'images/s3.jpg';
-}
-elseif($_SERVER['PHP_SELF'] == '/wishlist.php') {
-	$imageURL = 'images/s1.jpg';
-}
-elseif($_SERVER['PHP_SELF'] == '/stores.php') {
-	$imageURL = 'images/s2.jpg';
-}
-else {
-	$imageURL = 'images/s4.gif';
-}
+	$imageArray = [
+		"images/Yarids_Blue_01.jpg",
+		"images/Yarids_Blue_02.jpg",
+		"images/Yarids_Blue_03.jpg",
+		"images/Yarids_Green_01.jpg",
+		"images/Yarids_Green_02.jpg",
+		"images/Yarids_Green_03.jpg",
+		"images/Yarids_Purple_01.jpg",
+		"images/Yarids_Purple_02.jpg",
+		"images/Yarids_Purple_03.jpg",
+		"images/Yarids_Red_01.jpg",
+		"images/Yarids_Red_02.jpg",
+		"images/Yarids_Red_03.jpg",
+		"images/Yarids_Yellow_01.jpg",
+		"images/Yarids_Yellow_02.jpg",
+		"images/Yarids_Yellow_03.jpg"
+	];
+
+	if(strpos($_SERVER['PHP_SELF'], 'index.php') == false){
+		$c = rand(0, count($imageArray) - 1);
+		$imageURL = $imageArray[$c];
+
+		?>
+
+<html style="background: url(<?php echo $imageURL; ?>) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen">
+
+		<?php
+	}
+	else {
+
+		?>
+
+<html style="-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen">
+
+		<?php
+	}
 
 ?>
 
-<html style="background: url(<?php echo $imageURL; ?>) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen">
+
 
 <head>
 	<meta charset="utf-8">
@@ -39,6 +57,42 @@ else {
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/yarids.js"></script>
+
+	<script type="text/javascript">
+
+		$( document ).ready(function() {
+
+			$.fn.preload = function() { this.each(function(){ $('<img/>')[0].src = this; }); } // Usage: $(['img1.jpg','img2.jpg','img3.jpg']).preload();
+
+			$(["images/Yarids_Yellow_01.jpg", "images/Yarids_Yellow_02.jpg", "images/Yarids_Yellow_03.jpg"]).preload();
+
+			var bgs = ["images/Yarids_Yellow_01.jpg", "images/Yarids_Yellow_02.jpg", "images/Yarids_Yellow_03.jpg"];
+
+			var html = $('html');
+
+			function changeBackground(curNumber) {
+
+				html.css("background", "url(" + bgs[curNumber] + ") no-repeat center center fixed");
+				html.css("background-size", "cover");
+
+				curNumber++;
+
+				if(curNumber == 3) {
+					curNumber = 0;
+				}
+
+				setTimeout(function(){changeBackground(curNumber)}, 2000);
+
+			}
+
+			changeBackground(0);
+
+
+		});
+
+
+
+	</script>
 </head>
 
 <body>
