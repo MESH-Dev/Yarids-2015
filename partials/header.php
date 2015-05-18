@@ -62,31 +62,33 @@
 
 		$( document ).ready(function() {
 
-			$.fn.preload = function() { this.each(function(){ $('<img/>')[0].src = this; }); } // Usage: $(['img1.jpg','img2.jpg','img3.jpg']).preload();
+			if ((window.location.href.indexOf('.php') == -1) || (window.location.href.indexOf('index.php') > -1)) {
 
-			$(["images/Yarids_Yellow_01.jpg", "images/Yarids_Yellow_02.jpg", "images/Yarids_Yellow_03.jpg"]).preload();
+				$.fn.preload = function() { this.each(function(){ $('<img/>')[0].src = this; }); } // Usage: $(['img1.jpg','img2.jpg','img3.jpg']).preload();
 
-			var bgs = ["images/Yarids_Yellow_01.jpg", "images/Yarids_Yellow_02.jpg", "images/Yarids_Yellow_03.jpg"];
+				$(["images/Yarids_Yellow_01.jpg", "images/Yarids_Yellow_02.jpg", "images/Yarids_Yellow_03.jpg"]).preload();
 
-			var html = $('html');
+				var bgs = ["images/Yarids_Yellow_01.jpg", "images/Yarids_Yellow_02.jpg", "images/Yarids_Yellow_03.jpg"];
 
-			function changeBackground(curNumber) {
+				var html = $('html');
 
-				html.css("background", "url(" + bgs[curNumber] + ") no-repeat center center fixed");
-				html.css("background-size", "cover");
+				function changeBackground(curNumber) {
 
-				curNumber++;
+					html.css("background", "url(" + bgs[curNumber] + ") no-repeat center center fixed");
+					html.css("background-size", "cover");
 
-				if(curNumber == 3) {
-					curNumber = 0;
+					curNumber++;
+
+					if(curNumber == 3) {
+						curNumber = 0;
+					}
+
+					setTimeout(function(){changeBackground(curNumber)}, 2000);
+
 				}
 
-				setTimeout(function(){changeBackground(curNumber)}, 2000);
-
+				changeBackground(0);
 			}
-
-			changeBackground(0);
-
 
 		});
 
