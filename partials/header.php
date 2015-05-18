@@ -66,9 +66,37 @@
 
 				$.fn.preload = function() { this.each(function(){ $('<img/>')[0].src = this; }); } // Usage: $(['img1.jpg','img2.jpg','img3.jpg']).preload();
 
-				$(["images/Yarids_Yellow_01.jpg", "images/Yarids_Yellow_02.jpg", "images/Yarids_Yellow_03.jpg"]).preload();
+				$(["images/Yarids_Yellow_01.jpg",
+				"images/Yarids_Yellow_02.jpg",
+				"images/Yarids_Yellow_03.jpg",
+				"images/Yarids_Blue_01.jpg",
+				"images/Yarids_Blue_02.jpg",
+				"images/Yarids_Blue_03.jpg",
+				"images/Yarids_Green_01.jpg",
+				"images/Yarids_Green_02.jpg",
+				"images/Yarids_Green_03.jpg",
+				"images/Yarids_Purple_01.jpg",
+				"images/Yarids_Purple_02.jpg",
+				"images/Yarids_Purple_03.jpg",
+				"images/Yarids_Red_01.jpg",
+				"images/Yarids_Red_02.jpg",
+				"images/Yarids_Red_03.jpg"]).preload();
 
-				var bgs = ["images/Yarids_Yellow_01.jpg", "images/Yarids_Yellow_02.jpg", "images/Yarids_Yellow_03.jpg"];
+				var bgs = ["images/Yarids_Yellow_01.jpg",
+				"images/Yarids_Yellow_02.jpg",
+				"images/Yarids_Yellow_03.jpg",
+				"images/Yarids_Blue_01.jpg",
+				"images/Yarids_Blue_02.jpg",
+				"images/Yarids_Blue_03.jpg",
+				"images/Yarids_Green_01.jpg",
+				"images/Yarids_Green_02.jpg",
+				"images/Yarids_Green_03.jpg",
+				"images/Yarids_Purple_01.jpg",
+				"images/Yarids_Purple_02.jpg",
+				"images/Yarids_Purple_03.jpg",
+				"images/Yarids_Red_01.jpg",
+				"images/Yarids_Red_02.jpg",
+				"images/Yarids_Red_03.jpg"];
 
 				var html = $('html');
 
@@ -79,7 +107,7 @@
 
 					curNumber++;
 
-					if(curNumber == 3) {
+					if(curNumber == 15) {
 						curNumber = 0;
 					}
 
