@@ -111,7 +111,7 @@
 						curNumber = 0;
 					}
 
-					setTimeout(function(){changeBackground(curNumber)}, 2000);
+					setTimeout(function(){changeBackground(curNumber)}, 1000);
 
 				}
 
