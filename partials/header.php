@@ -58,29 +58,33 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/yarids.js"></script>
 
+	<style>
+		div#preload { display: none; }
+	</style>
+
+	<div id="preload">
+	   <img src="images/Yarids_Yellow_01.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Yellow_02.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Yellow_03.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Blue_01.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Blue_02.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Blue_03.jpg" width="1" height="1" />
+	<img src="images/Yarids_Green_01.jpg" width="1" height="1" />
+	<img src="images/Yarids_Green_02.jpg" width="1" height="1" />
+	<img src="images/Yarids_Green_03.jpg" width="1" height="1" />
+	<img src="images/Yarids_Purple_01.jpg" width="1" height="1" />
+	<img src="images/Yarids_Purple_02.jpg" width="1" height="1" />
+	<img src="images/Yarids_Purple_03.jpg" width="1" height="1" />
+	<img src="images/Yarids_Red_01.jpg" width="1" height="1" />
+	<img src="images/Yarids_Red_02.jpg" width="1" height="1" />
+	<img src="images/Yarids_Red_03.jpg" width="1" height="1" />
+	</div>
+
 	<script type="text/javascript">
 
 		$( document ).ready(function() {
 
 			if ((window.location.href.indexOf('.php') == -1) || (window.location.href.indexOf('index.php') > -1)) {
-
-				$.fn.preload = function() { this.each(function(){ $('<img/>')[0].src = this; }); } // Usage: $(['img1.jpg','img2.jpg','img3.jpg']).preload();
-
-				$(["images/Yarids_Yellow_01.jpg",
-				"images/Yarids_Yellow_02.jpg",
-				"images/Yarids_Yellow_03.jpg",
-				"images/Yarids_Blue_01.jpg",
-				"images/Yarids_Blue_02.jpg",
-				"images/Yarids_Blue_03.jpg",
-				"images/Yarids_Green_01.jpg",
-				"images/Yarids_Green_02.jpg",
-				"images/Yarids_Green_03.jpg",
-				"images/Yarids_Purple_01.jpg",
-				"images/Yarids_Purple_02.jpg",
-				"images/Yarids_Purple_03.jpg",
-				"images/Yarids_Red_01.jpg",
-				"images/Yarids_Red_02.jpg",
-				"images/Yarids_Red_03.jpg"]).preload();
 
 				var bgs = ["images/Yarids_Yellow_01.jpg",
 				"images/Yarids_Yellow_02.jpg",
@@ -111,7 +115,11 @@
 						curNumber = 0;
 					}
 
-					setTimeout(function(){changeBackground(curNumber)}, 1750);
+					if (curNumber % 3 == 0) {
+						setTimeout(function(){changeBackground(curNumber)}, 2000);
+					} else {
+						setTimeout(function(){changeBackground(curNumber)}, 750);
+					}
 
 				}
 
