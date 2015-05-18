@@ -13,8 +13,7 @@
         <div class="main-content">
 
           <div class="slides">
-            <div><img src="images/rectangle.png" /></div>
-            <div><img src="images/rectangle-1.png" /></div>
+            <div><img src="images/yarids_store.jpg" /></div>
           </div>
 
           <br/>
