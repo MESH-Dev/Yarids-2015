@@ -3,21 +3,18 @@
 <?php
 
 	$imageArray = [
-		"images/Yarids_Blue_01.jpg",
-		"images/Yarids_Blue_02.jpg",
-		"images/Yarids_Blue_03.jpg",
-		"images/Yarids_Green_01.jpg",
-		"images/Yarids_Green_02.jpg",
-		"images/Yarids_Green_03.jpg",
-		"images/Yarids_Purple_01.jpg",
-		"images/Yarids_Purple_02.jpg",
-		"images/Yarids_Purple_03.jpg",
-		"images/Yarids_Red_01.jpg",
-		"images/Yarids_Red_02.jpg",
-		"images/Yarids_Red_03.jpg",
-		"images/Yarids_Yellow_01.jpg",
-		"images/Yarids_Yellow_02.jpg",
-		"images/Yarids_Yellow_03.jpg"
+		"images/Yarids_Blue_01-2.jpg",
+		"images/Yarids_Blue_04.jpg",
+		"images/Yarids_Blue_05.jpg",
+		"images/Yarids_Purple_01-2.jpg",
+		"images/Yarids_Purple_04.jpg",
+		"images/Yarids_Purple_05.jpg",
+		"images/Yarids_Red_01-2.jpg",
+		"images/Yarids_Red_04.jpg",
+		"images/Yarids_Red_05.jpg",
+		"images/Yarids_Yellow_01-2.jpg",
+		"images/Yarids_Yellow_04.jpg",
+		"images/Yarids_Yellow_05.jpg"
 	];
 
 	if(strpos($_SERVER['PHP_SELF'], 'index.php') == false){
@@ -63,21 +60,18 @@
 	</style>
 
 	<div id="preload">
-	   <img src="images/Yarids_Yellow_01.jpg" width="1" height="1" />
-	   <img src="images/Yarids_Yellow_02.jpg" width="1" height="1" />
-	   <img src="images/Yarids_Yellow_03.jpg" width="1" height="1" />
-	   <img src="images/Yarids_Blue_01.jpg" width="1" height="1" />
-	   <img src="images/Yarids_Blue_02.jpg" width="1" height="1" />
-	   <img src="images/Yarids_Blue_03.jpg" width="1" height="1" />
-	<img src="images/Yarids_Green_01.jpg" width="1" height="1" />
-	<img src="images/Yarids_Green_02.jpg" width="1" height="1" />
-	<img src="images/Yarids_Green_03.jpg" width="1" height="1" />
-	<img src="images/Yarids_Purple_01.jpg" width="1" height="1" />
-	<img src="images/Yarids_Purple_02.jpg" width="1" height="1" />
-	<img src="images/Yarids_Purple_03.jpg" width="1" height="1" />
-	<img src="images/Yarids_Red_01.jpg" width="1" height="1" />
-	<img src="images/Yarids_Red_02.jpg" width="1" height="1" />
-	<img src="images/Yarids_Red_03.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Yellow_01-2.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Yellow_02-2.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Yellow_03-2.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Blue_01-2.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Blue_02-2.jpg" width="1" height="1" />
+	   <img src="images/Yarids_Blue_03-2.jpg" width="1" height="1" />
+	<img src="images/Yarids_Purple_01-2.jpg" width="1" height="1" />
+	<img src="images/Yarids_Purple_02-2.jpg" width="1" height="1" />
+	<img src="images/Yarids_Purple_03-2.jpg" width="1" height="1" />
+	<img src="images/Yarids_Red_01-2.jpg" width="1" height="1" />
+	<img src="images/Yarids_Red_02-2.jpg" width="1" height="1" />
+	<img src="images/Yarids_Red_03-2.jpg" width="1" height="1" />
 	</div>
 
 	<script type="text/javascript">
@@ -86,21 +80,18 @@
 
 			if ((window.location.href.indexOf('.php') == -1) || (window.location.href.indexOf('index.php') > -1)) {
 
-				var bgs = ["images/Yarids_Yellow_01.jpg",
-				"images/Yarids_Yellow_02.jpg",
-				"images/Yarids_Yellow_03.jpg",
-				"images/Yarids_Blue_01.jpg",
-				"images/Yarids_Blue_02.jpg",
-				"images/Yarids_Blue_03.jpg",
-				"images/Yarids_Green_01.jpg",
-				"images/Yarids_Green_02.jpg",
-				"images/Yarids_Green_03.jpg",
-				"images/Yarids_Purple_01.jpg",
-				"images/Yarids_Purple_02.jpg",
-				"images/Yarids_Purple_03.jpg",
-				"images/Yarids_Red_01.jpg",
-				"images/Yarids_Red_02.jpg",
-				"images/Yarids_Red_03.jpg"];
+				var bgs = ["images/Yarids_Yellow_01-2.jpg",
+				"images/Yarids_Yellow_02-2.jpg",
+				"images/Yarids_Yellow_03-2.jpg",
+				"images/Yarids_Blue_01-2.jpg",
+				"images/Yarids_Blue_02-2.jpg",
+				"images/Yarids_Blue_03-2.jpg",
+				"images/Yarids_Purple_01-2.jpg",
+				"images/Yarids_Purple_02-2.jpg",
+				"images/Yarids_Purple_03-2.jpg",
+				"images/Yarids_Red_01-2.jpg",
+				"images/Yarids_Red_02-2.jpg",
+				"images/Yarids_Red_03-2.jpg"];
 
 				var html = $('html');
 
@@ -111,7 +102,7 @@
 
 					curNumber++;
 
-					if(curNumber == 15) {
+					if(curNumber == bgs.length) {
 						curNumber = 0;
 					}
 
