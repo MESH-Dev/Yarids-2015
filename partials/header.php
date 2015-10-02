@@ -3,18 +3,15 @@
 <?php
 
 	$imageArray = [
-		"images/Yarids_Blue_01-2.jpg",
-		"images/Yarids_Blue_04.jpg",
-		"images/Yarids_Blue_05.jpg",
-		"images/Yarids_Purple_01-2.jpg",
-		"images/Yarids_Purple_04.jpg",
-		"images/Yarids_Purple_05.jpg",
-		"images/Yarids_Red_01-2.jpg",
-		"images/Yarids_Red_04.jpg",
-		"images/Yarids_Red_05.jpg",
-		"images/Yarids_Yellow_01-2.jpg",
-		"images/Yarids_Yellow_04.jpg",
-		"images/Yarids_Yellow_05.jpg"
+	"images/Yarids_SS2015_Yellow_01.jpg",
+	"images/Yarids_SS2015_Yellow_02.jpg",
+	"images/Yarids_SS2015_Yellow_03.jpg",
+	"images/Yarids_SS2015_Blue_01.jpg",
+	"images/Yarids_SS2015_Blue_02.jpg",
+	"images/Yarids_SS2015_Blue_03.jpg",
+	"images/Yarids_SS2015_Red_01.jpg",
+	"images/Yarids_SS2015_Red_02.jpg",
+	"images/Yarids_SS2015_Red_03.jpg"
 	];
 
 	if(strpos($_SERVER['PHP_SELF'], 'index.php') == false){
@@ -31,7 +28,7 @@
 
 		?>
 
-<html style="-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen">
+<html style="background: url('images/Yarids_SS2015_Yellow_01.jpg') no-repeat center center fixed; background-size: cover; k-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen">
 
 		<?php
 	}
@@ -55,67 +52,64 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/yarids.js"></script>
 
-	<style>
-		div#preload { display: none; }
-	</style>
-
-	<div id="preload">
-	   <img src="images/Yarids_Yellow_01-2.jpg" width="1" height="1" />
-	   <img src="images/Yarids_Yellow_02-2.jpg" width="1" height="1" />
-	   <img src="images/Yarids_Yellow_03-2.jpg" width="1" height="1" />
-	   <img src="images/Yarids_Blue_01-2.jpg" width="1" height="1" />
-	   <img src="images/Yarids_Blue_02-2.jpg" width="1" height="1" />
-	   <img src="images/Yarids_Blue_03-2.jpg" width="1" height="1" />
-	<img src="images/Yarids_Purple_01-2.jpg" width="1" height="1" />
-	<img src="images/Yarids_Purple_02-2.jpg" width="1" height="1" />
-	<img src="images/Yarids_Purple_03-2.jpg" width="1" height="1" />
-	<img src="images/Yarids_Red_01-2.jpg" width="1" height="1" />
-	<img src="images/Yarids_Red_02-2.jpg" width="1" height="1" />
-	<img src="images/Yarids_Red_03-2.jpg" width="1" height="1" />
-	</div>
-
 	<script type="text/javascript">
 
 		$( document ).ready(function() {
 
-			if ((window.location.href.indexOf('.php') == -1) || (window.location.href.indexOf('index.php') > -1)) {
+			var html = $('html');
 
-				var bgs = ["images/Yarids_Yellow_01-2.jpg",
-				"images/Yarids_Yellow_02-2.jpg",
-				"images/Yarids_Yellow_03-2.jpg",
-				"images/Yarids_Blue_01-2.jpg",
-				"images/Yarids_Blue_02-2.jpg",
-				"images/Yarids_Blue_03-2.jpg",
-				"images/Yarids_Purple_01-2.jpg",
-				"images/Yarids_Purple_02-2.jpg",
-				"images/Yarids_Purple_03-2.jpg",
-				"images/Yarids_Red_01-2.jpg",
-				"images/Yarids_Red_02-2.jpg",
-				"images/Yarids_Red_03-2.jpg"];
+			function showBackgrounds() {
 
-				var html = $('html');
+				if ((window.location.href.indexOf('.php') == -1) || (window.location.href.indexOf('index.php') > -1)) {
 
-				function changeBackground(curNumber) {
+					$.fn.preload = function() { this.each(function(){ $('<img/>')[0].src = this; }); }
 
-					html.css("background", "url(" + bgs[curNumber] + ") no-repeat center center fixed");
-					html.css("background-size", "cover");
+					$(["images/Yarids_SS2015_Yellow_01.jpg",
+					"images/Yarids_SS2015_Yellow_02.jpg",
+					"images/Yarids_SS2015_Yellow_03.jpg",
+					"images/Yarids_SS2015_Blue_01.jpg",
+					"images/Yarids_SS2015_Blue_02.jpg",
+					"images/Yarids_SS2015_Blue_03.jpg",
+					"images/Yarids_SS2015_Red_01.jpg",
+					"images/Yarids_SS2015_Red_02.jpg",
+					"images/Yarids_SS2015_Red_03.jpg"]).preload();
 
-					curNumber++;
+					var bgs = ["images/Yarids_SS2015_Yellow_01.jpg",
+					"images/Yarids_SS2015_Yellow_02.jpg",
+					"images/Yarids_SS2015_Yellow_03.jpg",
+					"images/Yarids_SS2015_Blue_01.jpg",
+					"images/Yarids_SS2015_Blue_02.jpg",
+					"images/Yarids_SS2015_Blue_03.jpg",
+					"images/Yarids_SS2015_Red_01.jpg",
+					"images/Yarids_SS2015_Red_02.jpg",
+					"images/Yarids_SS2015_Red_03.jpg"];
 
-					if(curNumber == bgs.length) {
-						curNumber = 0;
+
+					function changeBackground(curNumber) {
+
+						html.css("background", "url(" + bgs[curNumber] + ") no-repeat center center fixed");
+						html.css("background-size", "cover");
+
+						curNumber++;
+
+						if(curNumber == bgs.length) {
+							curNumber = 0;
+						}
+
+						if (curNumber % 3 == 0) {
+							setTimeout(function(){changeBackground(curNumber)}, 2000);
+						} else {
+							setTimeout(function(){changeBackground(curNumber)}, 750);
+						}
+
 					}
 
-					if (curNumber % 3 == 0) {
-						setTimeout(function(){changeBackground(curNumber)}, 2000);
-					} else {
-						setTimeout(function(){changeBackground(curNumber)}, 750);
-					}
-
+					changeBackground(0);
 				}
 
-				changeBackground(0);
 			}
+
+			setTimeout(showBackgrounds, 3000);
 
 		});
 
@@ -124,7 +118,7 @@
 	</script>
 </head>
 
-<body>
+<body <?php if (strpos($_SERVER['SCRIPT_NAME'], 'index.php') !== false) { ?> class="home" <?php } ?>>
 
 <header>
 	<div class="container">

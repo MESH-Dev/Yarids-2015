@@ -12,4 +12,13 @@ jQuery(document).ready(function($) {
     }
   });
 
+  var html = $('html');
+
+  html.one('mousemove', function() {
+      $('.logo').fadeIn('slow');
+      $('.sidebar').fadeIn('slow');
+      $('.twitter').fadeIn('slow');
+      $('.cards').fadeIn('slow');
+  });
+
 });

@@ -3,9 +3,14 @@
   border: 4px solid black;
   background: white;
   margin-bottom: 2rem;
+  top: 210px;
+}
 
-  @include mq($tablet-width, 'min-width') {
-    top: 210px;
+.home {
+  .sidebar {
+    @include mq($tablet-width, 'min-width') {
+      display: none;
+    }
   }
 }
 
@@ -32,18 +37,31 @@
   font-size: em(16);
   background: white;
   margin-bottom: 2rem;
+  top: 535px;
+}
 
-  @include mq($tablet-width, 'min-width') {
-    top: 535px;
+.home {
+  .twitter {
+    @include mq($tablet-width, 'min-width') {
+
+      display: none;
+    }
   }
 }
 
 .cards {
   font-size: em(13);
   text-align: center;
+  top: 750px;
+}
 
-  @include mq($tablet-width, 'min-width') {
-    top: 760px;
+.home {
+  .cards {
+    @include mq($tablet-width, 'min-width') {
+
+
+      display: none;
+    }
   }
 }
 

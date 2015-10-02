@@ -812,58 +812,64 @@ footer p {
   border: 4px solid black;
   background: white;
   margin-bottom: 2rem;
+  top: 210px;
 }
+
 @media screen and (min-width: 960px) {
-  /* line 1, sass/layout/_menus.scss */
-  .sidebar {
-    top: 210px;
+  /* line 10, sass/layout/_menus.scss */
+  .home .sidebar {
+    display: none;
   }
 }
 
-/* line 14, sass/layout/_menus.scss */
+/* line 19, sass/layout/_menus.scss */
 .navigation ul li {
   margin-bottom: 20px;
 }
-/* line 16, sass/layout/_menus.scss */
+/* line 21, sass/layout/_menus.scss */
 .navigation ul li a {
   color: black;
   text-transform: uppercase;
 }
 
-/* line 25, sass/layout/_menus.scss */
+/* line 30, sass/layout/_menus.scss */
 .social a {
   color: black;
 }
 
-/* line 29, sass/layout/_menus.scss */
+/* line 34, sass/layout/_menus.scss */
 .twitter {
   padding: 25px;
   border: 4px solid black;
   font-size: 1em;
   background: white;
   margin-bottom: 2rem;
+  top: 535px;
 }
+
 @media screen and (min-width: 960px) {
-  /* line 29, sass/layout/_menus.scss */
-  .twitter {
-    top: 535px;
+  /* line 44, sass/layout/_menus.scss */
+  .home .twitter {
+    display: none;
   }
 }
 
-/* line 41, sass/layout/_menus.scss */
+/* line 52, sass/layout/_menus.scss */
 .cards {
   font-size: 0.8125em;
   text-align: center;
+  top: 750px;
 }
+
 @media screen and (min-width: 960px) {
-  /* line 41, sass/layout/_menus.scss */
-  .cards {
-    top: 760px;
+  /* line 59, sass/layout/_menus.scss */
+  .home .cards {
+    display: none;
   }
 }
 
 @media screen and (min-width: 960px) {
-  /* line 50, sass/layout/_menus.scss */
+  /* line 68, sass/layout/_menus.scss */
   .fixed {
     position: fixed;
     width: inherit;
@@ -897,6 +903,11 @@ html, body {
   height: 75px;
 }
 
+/* line 3, sass/layout/_footer.scss */
+.mesh {
+  color: white;
+}
+
 /* line 1, sass/layout/_background.scss */
 .background-fullscreen {
   -webkit-background-size: cover;
@@ -912,11 +923,18 @@ html, body {
   border: 4px solid black;
   text-align: center;
   background: white;
+  z-index: 100;
 }
+/* line 10, sass/layout/_header.scss */
+.logo img {
+  max-width: 65%;
+}
+
 @media screen and (min-width: 960px) {
-  /* line 1, sass/layout/_header.scss */
-  .logo {
+  /* line 17, sass/layout/_header.scss */
+  .home .logo {
     top: 2px;
+    display: none;
   }
 }
 

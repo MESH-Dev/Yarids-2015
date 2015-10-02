@@ -41,13 +41,13 @@ $TweetPHP = new TweetPHP(array(
   </div>
 
   <div class="cards fixed">
-    <p><a href="mailto:info@yarids.com">info.yarids@gmail.com</a></p>
-    <p>
+    <p><a href="mailto:info@yarids.com">info.yarids@gmail.com</a> &nbsp; &nbsp; <span class="mesh">Website by <a href="http://meshfresh.com" target="_blank">MESH</a></span></p>
+    <!-- <p>
       <img src="images/icons/visa-straight-32px.png">
       <img src="images/icons/mastercard-straight-32px.png">
       <img src="images/icons/discover-straight-32px.png">
       <img src="images/icons/american-express-straight-32px.png">
-    </p>
+    </p> -->
   </div>
 
 </div>

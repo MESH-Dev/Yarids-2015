@@ -9,13 +9,7 @@
     </div>
     <div class="row">
       <div class="cards">
-        <p><a href="mailto:info@yarids.com">info.yarids@gmail.com</a></p>
-        <p>
-          <img src="images/icons/visa-straight-32px.png">
-          <img src="images/icons/mastercard-straight-32px.png">
-          <img src="images/icons/discover-straight-32px.png">
-          <img src="images/icons/american-express-straight-32px.png">
-        </p>
+          <p><a href="mailto:info@yarids.com">info.yarids@gmail.com</a> &nbsp; &nbsp; <span class="mesh">Website by <a href="http://meshfresh.com" target="_blank">MESH</a></span></p>
       </div>
     </div>
   </div>

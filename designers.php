@@ -17,13 +17,13 @@
             <hr>
 
             <ul>
-    					<li>Aerin</li>
+
     					<li>Amalfi</li>
     					<li>Aquatalia</li>
     					<li>Arche</li>
     					<li>Ash</li>
-    					<li>B Brian Atwood</li>
     					<li>Bettye Muller</li>
+                        <li>Born</li>
     					<li>Claudia Ciuti</li>
     					<li>Donald J Pliner</li>
     					<li>DVF</li>
@@ -45,14 +45,16 @@
     					<li>Rachel Zoe</li>
     					<li>Ramon Tenza</li>
     					<li>Rebecca Minkoff</li>
+                        <li>Rowen</li>
     					<li>Salpy</li>
     					<li>Sam Edelman</li>
     					<li>Sesto Meucci</li>
     					<li>Sorel</li>
     					<li>Sperry Topsider</li>
     					<li>Stuart Weitzman</li>
-    					<li>Superga</li>
+
     					<li>Toms</li>
+                        <li>Toni Pons</li>
     					<li>Tory Burch</li>
     					<li>Ugg</li>
     					<li>Van Eli</li>
@@ -70,15 +72,15 @@
   						<li>B-low the Belt belts and handbags</li>
   						<li>Brighton jewelry<br>
   						  <p>only in Lewisburg</p></li>
-  						<li>butter LONDON nail polish</li>
+
   						<li>Dr. Brandt skin care<br>
   						  <p>only in Charleston</p></li>
   						<li>Donni Charm scarves</li>
+                          <li>Elizabeth and James jewelry</li>
   						<li>Julie Vos jewelry</li>
   						<li>Kate Spade jewelry</li>
   						<li>Lollia Skincare<br>
   							<p>only in Charleston, Roanoke, and Lewisburg</p></li>
-  						<li>Lulu Dk tattoos</li>
   						<li>Maya Brenner jewelry</li>
   						<li>Philosophy skin care<br>
   						  <p>only in Lewisburg</p></li>
@@ -102,7 +104,7 @@
   						<li>Botkier</li>
   						<li>Eric Javits</li>
   						<li>Foley and Corrina</li>
-  						<li>Halston Heritage</li>
+              <li>Hammitt</li>
   						<li>Kate Spade handbags</li>
   						<li>Longchamp</li>
   						<li>Mary Frances</li>
@@ -137,18 +139,22 @@
 
             <ul>
   						<li>Allen Edmonds</li>
+                        <li>Allen Payne</li>
   						<li>Donald J Pliner</li>
   						<li>Frye</li>
   						<li>Cole Haan</li>
   						<li>Merrell</li>
   						<li>Sperry Topsider</li>
-  						<li>Too Boot New York</li>
+  						<li>To Boot New York</li>
   						<li>Ugg</li>
   					</ul>
 
           </div>
 
         </div>
+
+        
+
       </div>
     </div>
   </div>
