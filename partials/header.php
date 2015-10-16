@@ -6,16 +6,12 @@
 	"images/Yarids_WS2015_Yellow_01.jpg",
 	"images/Yarids_WS2015_Yellow_02.jpg",
 	"images/Yarids_WS2015_Yellow_03.jpg",
-	"images/Yarids_WS2015_Yellow_04.jpg",
 	"images/Yarids_WS2015_Blue_01.jpg",
 	"images/Yarids_WS2015_Blue_02.jpg",
 	"images/Yarids_WS2015_Blue_03.jpg",
-	"images/Yarids_WS2015_Blue_04.jpg",
 	"images/Yarids_WS2015_Purple_01.jpg",
 	"images/Yarids_WS2015_Purple_02.jpg",
-	"images/Yarids_WS2015_Purple_03.jpg",
-	"images/Yarids_WS2015_Purple_04.jpg",
-	"images/Yarids_WS2015_Purple_05.jpg",
+	"images/Yarids_WS2015_Purple_03.jpg"
 	];
 
 	if(strpos($_SERVER['PHP_SELF'], 'index.php') == false){
