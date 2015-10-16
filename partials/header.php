@@ -3,15 +3,19 @@
 <?php
 
 	$imageArray = [
-	"images/Yarids_SS2015_Yellow_01.jpg",
-	"images/Yarids_SS2015_Yellow_02.jpg",
-	"images/Yarids_SS2015_Yellow_03.jpg",
-	"images/Yarids_SS2015_Blue_01.jpg",
-	"images/Yarids_SS2015_Blue_02.jpg",
-	"images/Yarids_SS2015_Blue_03.jpg",
-	"images/Yarids_SS2015_Red_01.jpg",
-	"images/Yarids_SS2015_Red_02.jpg",
-	"images/Yarids_SS2015_Red_03.jpg"
+	"images/Yarids_WS2015_Yellow_01.jpg",
+	"images/Yarids_WS2015_Yellow_02.jpg",
+	"images/Yarids_WS2015_Yellow_03.jpg",
+	"images/Yarids_WS2015_Yellow_04.jpg",
+	"images/Yarids_WS2015_Blue_01.jpg",
+	"images/Yarids_WS2015_Blue_02.jpg",
+	"images/Yarids_WS2015_Blue_03.jpg",
+	"images/Yarids_WS2015_Blue_04.jpg",
+	"images/Yarids_WS2015_Purple_01.jpg",
+	"images/Yarids_WS2015_Purple_02.jpg",
+	"images/Yarids_WS2015_Purple_03.jpg",
+	"images/Yarids_WS2015_Purple_04.jpg",
+	"images/Yarids_WS2015_Purple_05.jpg",
 	];
 
 	if(strpos($_SERVER['PHP_SELF'], 'index.php') == false){
@@ -28,7 +32,7 @@
 
 		?>
 
-<html style="background: url('images/Yarids_SS2015_Yellow_01.jpg') no-repeat center center fixed; background-size: cover; k-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen">
+<html style="background: url('images/Yarids_SS2015_Yellow_01.jpg') no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen">
 
 		<?php
 	}
@@ -64,25 +68,34 @@
 
 					$.fn.preload = function() { this.each(function(){ $('<img/>')[0].src = this; }); }
 
-					$(["images/Yarids_SS2015_Yellow_01.jpg",
-					"images/Yarids_SS2015_Yellow_02.jpg",
-					"images/Yarids_SS2015_Yellow_03.jpg",
-					"images/Yarids_SS2015_Blue_01.jpg",
-					"images/Yarids_SS2015_Blue_02.jpg",
-					"images/Yarids_SS2015_Blue_03.jpg",
-					"images/Yarids_SS2015_Red_01.jpg",
-					"images/Yarids_SS2015_Red_02.jpg",
-					"images/Yarids_SS2015_Red_03.jpg"]).preload();
+					$(["images/Yarids_WS2015_Yellow_01.jpg",
+					"images/Yarids_WS2015_Yellow_02.jpg",
+					"images/Yarids_WS2015_Yellow_03.jpg",
+					"images/Yarids_WS2015_Yellow_04.jpg",
+					"images/Yarids_WS2015_Blue_01.jpg",
+					"images/Yarids_WS2015_Blue_02.jpg",
+					"images/Yarids_WS2015_Blue_03.jpg",
+					"images/Yarids_WS2015_Blue_04.jpg",
+					"images/Yarids_WS2015_Purple_01.jpg",
+					"images/Yarids_WS2015_Purple_02.jpg",
+					"images/Yarids_WS2015_Purple_03.jpg",
+					"images/Yarids_WS2015_Purple_04.jpg",
+					"images/Yarids_WS2015_Purple_05.jpg",
+					]).preload();
 
-					var bgs = ["images/Yarids_SS2015_Yellow_01.jpg",
-					"images/Yarids_SS2015_Yellow_02.jpg",
-					"images/Yarids_SS2015_Yellow_03.jpg",
-					"images/Yarids_SS2015_Blue_01.jpg",
-					"images/Yarids_SS2015_Blue_02.jpg",
-					"images/Yarids_SS2015_Blue_03.jpg",
-					"images/Yarids_SS2015_Red_01.jpg",
-					"images/Yarids_SS2015_Red_02.jpg",
-					"images/Yarids_SS2015_Red_03.jpg"];
+					var bgs = ["images/Yarids_WS2015_Yellow_01.jpg",
+					"images/Yarids_WS2015_Yellow_02.jpg",
+					"images/Yarids_WS2015_Yellow_03.jpg",
+					"images/Yarids_WS2015_Yellow_04.jpg",
+					"images/Yarids_WS2015_Blue_01.jpg",
+					"images/Yarids_WS2015_Blue_02.jpg",
+					"images/Yarids_WS2015_Blue_03.jpg",
+					"images/Yarids_WS2015_Blue_04.jpg",
+					"images/Yarids_WS2015_Purple_01.jpg",
+					"images/Yarids_WS2015_Purple_02.jpg",
+					"images/Yarids_WS2015_Purple_03.jpg",
+					"images/Yarids_WS2015_Purple_04.jpg",
+					"images/Yarids_WS2015_Purple_05.jpg",];
 
 
 					function changeBackground(curNumber) {
